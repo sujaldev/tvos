@@ -14,7 +14,7 @@ def structure_results(results):
 
         structure.append({
             "media_title": media_title,
-            "media_link": quote_plus(media_link),
+            "media_link": media_link,
             "thumbnail": thumbnail_img
         })
 
