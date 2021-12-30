@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/static/wallpaper.jpg") no-repeat;
+    background-size: cover;
+}
+
+form {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.searchbar {
+    width: 40vw;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.596);
+    backdrop-filter: blur(20px);
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.submit {
+    width: 8%;
+    min-width: 70px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.356) url("/static/icons/search.svg") no-repeat center;
+    background-size: 40%;
+    backdrop-filter: blur(20px);
+    cursor: pointer;
+}

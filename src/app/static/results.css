@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/static/wallpaper.jpg") no-repeat;
+    background-size: cover;
+}
+
+.widget-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    position: absolute;
+    width: 95%;
+    height: 98%;
+    top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+.back-btn {
+    position: relative;
+    margin: 0 0 2% 0;
+    width: 50px;
+    height: 50px;
+    background: rgba(28, 33, 39, .6) url("/static/icons/back.svg") no-repeat 66% 50%;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-right: 0;
+    border-bottom: 0;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, .02), 0 6.7px 5.3px rgba(0, 0, 0, .028), 0 12.5px 10px rgba(0, 0, 0, .035), 0 22.3px 17.9px rgba(0, 0, 0, .042), 0 41.8px 33.4px rgba(0, 0, 0, .05), 0 100px 80px rgba(0, 0, 0, .07);
+}
+
+
+.result-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 90%;
+    height: 100%;
+    padding: 30px;
+    margin-bottom: 1.8%;
+    overflow: scroll;
+    border-radius: 8px;
+    background: rgba(28, 33, 39, .4);
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-right: 0;
+    border-bottom: 0;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, .02), 0 6.7px 5.3px rgba(0, 0, 0, .028), 0 12.5px 10px rgba(0, 0, 0, .035), 0 22.3px 17.9px rgba(0, 0, 0, .042), 0 41.8px 33.4px rgba(0, 0, 0, .05), 0 100px 80px rgba(0, 0, 0, .07);
+}
+
+.result-container::-webkit-scrollbar {
+    width: 0;
+}
+
+.result-item {
+    text-decoration: none;
+
+    width: 12vw;
+    height: 40vh;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-right: 0;
+    border-bottom: 0;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, .02), 0 6.7px 5.3px rgba(0, 0, 0, .028), 0 12.5px 10px rgba(0, 0, 0, .035), 0 22.3px 17.9px rgba(0, 0, 0, .042), 0 41.8px 33.4px rgba(0, 0, 0, .05), 0 100px 80px rgba(0, 0, 0, .07);
+    text-overflow: ellipsis;
+}
+
+.result-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.result-item p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    margin: 20px 0 20px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
